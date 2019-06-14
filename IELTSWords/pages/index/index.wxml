@@ -1,0 +1,6 @@
+<!--index.wxml-->
+
+<view class="progress">掌握章节:{{mastered}} /48</view>
+
+<view class="progress">上次学到:第{{last}}章</view>
+<view class="progress">错词库:{{wrong}}</view>

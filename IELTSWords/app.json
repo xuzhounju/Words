@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lists/lists",
+    "pages/test/test",
+    "pages/episode/episode"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#89c3d8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#89c3d8",
+    "color": "#ffffff",
+    "selectedColor": "#fff100",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "进度",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile_c.png"
+      },
+      {
+        "pagePath": "pages/lists/lists",
+        "text": "章节",
+        "iconPath": "images/discover.png",
+        "selectedIconPath": "images/discover_c.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "错词库",
+        "iconPath": "images/filter.png",
+        "selectedIconPath": "images/filter_c.png"
+      }
+    ]
+  }
+}

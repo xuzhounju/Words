@@ -1,0 +1,7 @@
+/**app.wxss**/
+page {
+  background: #fcf5e5;  
+  padding-top: 40rpx ;
+  font-weight: 300;
+
+}

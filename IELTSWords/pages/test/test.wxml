@@ -1,0 +1,54 @@
+<!--pages/episode/episode.wxml-->
+<view wx:if="{{start}}">
+
+错词库
+<button
+  type="primary"
+  size="{{primarySize}}"
+  loading="{{loading}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  bindtap="primary"
+>
+  强化记忆
+</button>
+<button
+  type="warn"
+  size="{{warnSize}}"
+  loading="{{loading}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  bindtap="warn"
+>
+  测试
+</button>
+
+</view>
+
+
+
+<view wx:if="{{start!=true}}">
+  <view wx:if="{{primary}}">
+    <view wx:for="{{dict[tags[word][0]][tags[word][1]]}}" class="word">{{item}}</view>
+    <view bindtap='voice' class='word'>
+      <image src="../../images/voice.png"></image>
+    </view>
+    <button type="default"bindtap="next" hover-class="other-button-hover"> Next</button>
+    <button type="warn"bindtap="remove" hover-class="other-button-hover"> 移出错词库</button>
+  </view>
+
+  <view wx:if="{{warn}}">
+    <view wx:if="{{answer==false}}">
+      <view  class="word">{{dict[tags[word][0]][tags[word][1]][0]}}</view>
+      <button type="default"bindtap="answer" hover-class="other-button-hover"> Answer</button>
+    </view>
+    <view wx:else>
+      <view wx:for="{{dict[tags[word][0]][tags[word][1]]}}" class="word">{{item}}</view>
+      <button type="primary"bindtap="correct" hover-class="other-button-hover"> Correct! :)</button>
+      <button type="warn"bindtap="wrong" hover-class="other-button-hover"> Wrong! :(</button>
+    </view>
+  </view>
+
+
+
+</view>

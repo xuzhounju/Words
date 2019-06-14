@@ -1,0 +1,5 @@
+.progress{
+  padding-top:150rpx;
+  padding-left:150rpx;
+  font-size: 50rpx
+}

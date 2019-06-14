@@ -1,0 +1,7 @@
+<!--pages/lists/lists.wxml-->
+<view wx:for="{{lists}}"class="lists" bindtap="detailTap"wx:key="{{index}}" data-id="{{index}}">
+  <view class='list'>
+    <view>第 {{item}} 章</view>
+    <view wx:if="{{history[index]==1}}" class='clear'> clear!</view>
+  </view>
+</view>

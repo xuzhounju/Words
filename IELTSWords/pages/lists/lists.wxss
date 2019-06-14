@@ -1,0 +1,12 @@
+/* pages/lists/lists.wxss */
+
+.list{
+  display: -webkit-inline-flex;
+  padding-top:30rpx;
+  margin-left:50rpx
+
+}
+
+.clear{
+  color:#2198cc;
+}
